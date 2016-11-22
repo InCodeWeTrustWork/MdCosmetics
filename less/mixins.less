@@ -1,0 +1,120 @@
+@import "variable.less";
+
+.active-button() {
+		background:@color-blue;
+		border-radius: 1px;
+		color: @color-white;
+		font-weight: 100;
+		letter-spacing: 1.245px;
+		&:hover {
+		background:@color-blue-hover;
+		}
+}
+
+.mail-button() {
+	.mail {
+			color: @green;
+			border:1px solid @green;
+			background-color: #fff;
+			background-color: #fff;
+			border-radius: 50%;
+			margin-left: 10px;
+			transition: all .5s;
+			height: 60px;
+			width: 60px;
+			margin-top: -8px;
+	    &:hover {
+	    	border:1px solid #fff;
+	    	color: #fff;
+	    	background-color: @green;
+	    }
+		i{
+    		font-size: 1.6em;
+		}
+	}
+}
+
+.transition-all() {
+    -webkit-transition: all 0.35s;
+    -moz-transition: all 0.35s;
+    transition: all 0.35s;
+	-ms-transition: all 0.35s;
+	-o-transition: all 0.35s;
+
+}
+
+.box-shadow() {
+	 -webkit-box-shadow: 0 0.25em 0.25em rgba(0,0,0,0.1);
+    -moz-box-shadow: 0 0.25em 0.25em rgba(0,0,0,0.1);
+    box-shadow: 0 0.25em 0.25em rgba(0,0,0,0.1);
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.background-cover() {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size:cover;
+}
+
+.info-block-surg(){
+	margin: 50px;
+    padding: 50px;
+	border:@border;
+	border-radius: 4px;
+	cursor:pointer;
+	&:hover{ 
+	background:@color-main;
+	color: @color-white;
+	}
+	span {
+		font-size: 20px;
+	}
+}
+
+.filter-gray() {
+	-webkit-webkit-filter:grayscale(100%);
+	-moz-webkit-filter:grayscale(100%);
+	-ms-webkit-filter:grayscale(100%);
+	-o-webkit-filter:grayscale(100%);
+	webkit-filter:grayscale(100%);
+}
+
+.type() {
+		width: 170px;
+		height: 170px;
+		border-radius: 50%;
+		border:4px solid @green;
+		background-size: cover!important;
+		cursor: pointer;
+		font-size: 0.879rem;
+		img {
+			width: 120px;
+		}
+		.badge-in {
+			  background-color: @green;
+			 margin-top: 58px;
+			  height: 50px;
+			  border-radius: 7px;
+			  border-left: 1px solid @green;
+			  border-right: 1px solid @green;
+			  color: @color-white;
+			  padding-top: 6px;
+		
+		}
+		&:hover {
+			-webkit-filter: grayscale(81%);
+			transition:all .5s;
+			
+		}
+	}
+
+
+.discount-block() {
+	    background: rgba(0, 188, 212, 0.59);
+		border: @border-white;
+		padding: 0 25px 90px 25px;
+		margin:50px;
+}
